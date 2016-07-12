@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+    <p>Edit contents of <%= @file_name %>:</p>
+
+    <form action="/<%= @file_name %>" method="post">
+      <textarea name="content" id="content" rows="20" cols="100"><%= @file_content %></textarea>
+      <button type="submit" class="edit">Save Changes</button>
+    </form>
+  </body>
+
+</html>
